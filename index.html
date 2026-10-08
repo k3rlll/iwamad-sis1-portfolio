@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramazan Abdyashim - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+    
+            <div id="nav-links" class="nav-links">
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">Toggle Theme</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>Ramazan Abdyashim</h1>
+            <h2>About Me</h2>
+            <p>Hello! I am a passionate front-end developer currently focusing on building accessible and responsive web
+                applications. I enjoy turning complex problems into simple, beautiful, and intuitive interface designs.
+                During my studies, I have gained practical experience with semantic HTML, CSS layout techniques, and DOM
+                manipulation using vanilla JavaScript.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img  src="images/placeholder3.png" width="1920" height="1080"
+                        alt="Screenshot of the Profile Card application interface">
+                    <div class="project-content">
+                        <h3>Interactive Profile Card</h3>
+                        <p>A responsive and interactive profile card built using semantic HTML5,
+                            along with CSS Flexbox and Grid layouts. The project features a Vanilla JavaScript-driven
+                            state toggle mechanism, utility-first styling integration with Tailwind CSS, and was scaffolded using 
+                            a Vite development environment.</p>
+                        <a href="https://github.com/k3rlll/iwamad-practice/tree/week-02" target="_blank"
+                            rel="noopener noreferrer">View Project</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="images/placeholder1.png"
+                        size="250x350"
+                        alt="Interface of the Booking System project showing a list of available meeting rooms and a booking form">
+                    <div class="project-content">
+                        <h3>Booking System</h3>
+                        <p>This project is a backend application written in Go for a meeting room booking system.</p>
+                        <a href="https://github.com/k3rlll/Booking-room" target="_blank"
+                            rel="noopener noreferrer">View Project</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="images/placeholder2.png"
+                        size="250x350"
+                        alt="Interface of the Portfolio Website project showing a list of skills and a contact form">
+                    <div class="project-content">
+                        <h3>Skills Portfolio</h3>
+                        <p>This project is a client-side web application built using React, TypeScript,
+                         and the Vite build tool.</p>
+                        <a href="https://github.com/RamazanAbdyashim/task-tracker" target="_blank"
+                            rel="noopener noreferrer">View Project</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+                <div id="form-message" class="form-message" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Ramazan Abdyashim</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
